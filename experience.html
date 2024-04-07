@@ -96,18 +96,63 @@
         <section id="project-section" class="section main-subsection">
             <h2>Projects</h2>
             <div class="container">
+                <img src="images/aces.png" alt="Discord logo">
+                <div class="container-content">
+                    <h3>Antivirus Cybersecurity Research Project</h3>
+                    <h4>Honeypot Lifecycle Specialist</h3>
+                    <p>
+                        This antivirus research project was done as part of one of UMD's ACES courses. Our team studied the impact of antiviruses
+                        and antivirus warning banners on attacker behavior by creating four SSH-vulnerable honeypots. This was implemented by creating
+                        Linux containers hosted on an ACES virtual machine and using a JavaScript Man-In-The-Middle client to connect attackers to
+                        the honeypot after a few password attempts.
+                    </p>
+                    <p>
+                        Features:
+                        <ul>
+                            <li>Captured attacker IPs, commands entered, and preserved sessions for them to return</li>
+                            <li>Automated attack detection, attacker entry, honeypot recycling, and redeployment via Bash scripting</li>
+                            <li>Integrated Discord webhook to receive live notifications on attacks</li>
+                        </ul>
+                    </p>
+                </div>
+                <p class="container-date">Jan 2024 - Present</p>
+            </div>
+
+            <hr>
+
+            <div class="container">
+                <img src="images/steam.png" alt="Discord logo">
+                <div class="container-content">
+                    <h3>Steam Game Machine Learning Prediction Model</h3>
+                    <h4>ML Specialist</h3>
+                    <p>
+                        This model is a linear regression prediction model created using Python and pandas. Using data from 27,000 Steam games, we
+                        cleaned the data, performed preliminary analysis, and are developing a model to predict a new game's expected number of players
+                        based on publisher, game genre, price, and more.
+                    </p>
+                </div>
+                <p class="container-date">Jan 2024 - Present</p>
+            </div>
+
+            <hr>
+
+            <div class="container">
                 <img src="images/discord.png" alt="Discord logo">
                 <div class="container-content">
                     <h3>CherryBot</h3>
                     <h4>Project Lead</h3>
                     <p>
-                        CherryBot is a Discord bot created using Python, the asyncio library, and the Discord.py API
+                        CherryBot is a Discord bot created using Python, the asyncio library, and the Discord.py API. It receives
+                        user input by sending messages to the bot, which are then processed asynchronously and sends a message back to the user.
+                        This allows multiple different servers to interact with one running instance of the bot.
                     </p>
                     <p>
                         Features:
                         <ul>
-                            <li>Enhances user experience and interactivity with platform</li>
-                            <li>Manages music playing, virtual economy, games, and user activity</li>
+                            <li>Tracks user messages sent and displays leaderboard for each server.</li>
+                            <li>Manages virtual economy, with currency that can be collected daily, transferred between users, or used for games.</li>
+                            <li>Supports games such as blackjack, processing user input through message reactions, managing different game sessions simultaneously, and integrating with the virtual economy to win or lose currency.</li>
+                            <li>Plays music when invited to a voice channel by searching for and streaming audio from YouTube videos.</li>
                         </ul>
                         <a href="https://github.com/abarker0/CherryBot" target="_blank">Github source code</a>
                     </p>
