@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="section">
+        <div id="inner-header">
+            <h1>Alex Barker</h1>
+            <img id="profile" src="public/headshot.jpg" alt="Image of Alex Barker">
+        </div>
+    </header>
+
     <nav id="nav" class="section">
         <div id="nav-links">
             <span><a href="index.html">About</a></span>
@@ -14,18 +21,12 @@
             <span><a href="contact.html">Contact</a></span>
         </div>
     </nav>
-    <header class="section">
-        <div id="inner-header">
-            <h1>Alex Barker</h1>
-            <img id="profile" src="images/headshot.jpg" alt="Image of Alex Barker">
-        </div>
-    </header>
     
     <main class="section">
         <section id="experience-section" class="section main-subsection">
             <h2>Experience</h2>
             <div class="container">
-                <img src="images/umd.png" alt="University of Maryland logo">
+                <img src="public/logos/umd.png" alt="University of Maryland logo">
                 <div class="container-content">
                     <h3>University of Maryland, Division of IT</h3>
                     <h4>Service Desk Tier 2 Assistant Lead</h3>
@@ -49,7 +50,7 @@
             <hr> 
 
             <div class="experience container">
-                <img src="images/ricoh.png" alt="Ricoh USA, Inc., logo">
+                <img src="public/logos/ricoh.png" alt="Ricoh USA, Inc., logo">
                 <div class="container-content">
                     <h3>Ricoh USA, Inc</h3>
                     <h4>Education Customer Engineer Intern</h3>
@@ -61,6 +62,7 @@
                         <ul>
                             <li>Facilitated technology transitions while preserving data and user preferences of the faculty</li>
                             <li>Performed quality assurance on over 700 student Chromebooks</li>
+                            <li>Imaged and installed software on new student devices</li>
                             <li>Protected user information by disposing of end-of-life devices</li>
                             <li>Provided customer support for technical and networking issues</li>
                         </ul>
@@ -72,20 +74,23 @@
             <hr>
 
             <div class="container">
-                <img src="images/umd.png" alt="University of Maryland logo">
+                <img src="public/logos/umd.png" alt="University of Maryland logo">
                 <div class="container-content">
                     <h3>University of Maryland's First Year Innovative Research Experience (FIRE)</h3>
                     <h4>Research Team Lead</h3>
                     <p>
-                        I was selected to be part of UMD's FIRE research program, where I worked as the student Research Team Lead in the field of Bioinspired Robotics under Dr. Lena Johnson. 
+                        I was selected to be part of UMD's FIRE research program, where I worked as the student Research Team Lead in the field of Bioinspired Robotics
+                        under Dr. Lena Johnson. With the goal of creating a working prototype by the end, we followed the research pipeline from research to design and
+                        implementation to deployment.
                     </p>
                     <p>
                         Responsibilities:
                         <ul>
-                            <li>Part of UMD’s FIRE program working under Dr. Lena Johnson in the Bioinspired Robotics field</li>
+                            <li>Part of UMD's FIRE program working under Dr. Lena Johnson in the Bioinspired Robotics field</li>
                             <li>Established plan using existing research for deterring fish from underwater oil plumes</li>
                             <li>Led team of 5 by assigning team member duties and meeting progress goals throughout semesters</li>
-                            <li>Developed underwater robot using CAD featuring an air bladder and rear fin</li>
+                            <li>Created plan for underwater robot with an airbladder, rear fin, and waterproof body</li>
+                            <li>Designed watertight hull using CAD, including layout for internal Arduino circuitry and air bladder</li>
                             <li>Tested and iterated designs to produce prototype</li>
                         </ul>
                     </p>
@@ -93,51 +98,103 @@
                 <p class="container-date">Aug 2022 - Dec 2023</p>
             </div>
         </section>
+
+        
         <section id="project-section" class="section main-subsection">
             <h2>Projects</h2>
+
             <div class="container">
-                <img src="images/aces.png" alt="ACES logo">
+                <img src="public/logos/umd.png" alt="University of Maryland logo">
                 <div class="container-content">
-                    <h3>Antivirus Cybersecurity Research Project</h3>
-                    <h4>Honeypot Lifecycle Specialist</h3>
+                    <h3>Mercury</h3>
+                    <h4>Project Lead</h3>
                     <p>
-                        This antivirus research project was done as part of one of UMD's ACES courses. Our team studied the impact of antiviruses
-                        and antivirus warning banners on attacker behavior by creating four SSH-vulnerable honeypots. This was implemented by creating
-                        Linux containers hosted on an ACES virtual machine and using a JavaScript Man-In-The-Middle client to connect attackers to
-                        the honeypot after a few password attempts.
+                        Mercury is a UMD Computer Science degree planner website created using HTML/CSS and JavaScript hosted on a Node.js server using Express and ejs routing.
+                        Inspired by a previous Python hackathon project, this website integrates both the umd.io API and Planetterp API.
                     </p>
                     <p>
                         Features:
                         <ul>
-                            <li>Captured attacker IPs, commands entered, and preserved sessions for them to return</li>
-                            <li>Automated attack detection, attacker entry, honeypot recycling, and redeployment via Bash scripting</li>
-                            <li>Integrated Discord webhook to receive live notifications on attacks</li>
+                            <li>Processes user registration, login, and session persistence using bcrypt salted encryption</li>
+                            <li>Requests current UMD courses using umd.io API based on user query filters</li>
+                            <!-- <li>Converts and applies prior learning credit to graduation requirements
+                            <li>Organizes selected and required courses into semesters to minimize time to graduate</li>
+                            <li>Assists user with selecting general education courses that fill multiple requirements</li> -->
                         </ul>
+
+                        <a href="https://mercury-6phd.onrender.com/">Deployed website</a> <br>
+                        <a href="https://github.com/abarker0/Mercury" target="_blank">Github source code</a> <br>
+                        <a href="https://github.com/abarker0/OpenSourcery2022" target="_blank">Previous hackathon source code</a>
                     </p>
                 </div>
-                <p class="container-date">Jan 2024 - Present</p>
+                <p class="container-date">May 2024 - Present</p>
             </div>
 
             <hr>
 
             <div class="container">
-                <img src="images/steam.png" alt="Steam logo">
+                <img src="public/logos/aces.png" alt="ACES logo">
+                <div class="container-content">
+                    <h3>Antivirus Cybersecurity Research Project</h3>
+                    <h4>Honeypot Lifecycle Specialist</h3>
+                    <p>
+                        This antivirus research project was done as part of UMD's ACES program. Our team studied the impact of antiviruses
+                        and antivirus warning banners on attacker behavior by creating four SSH-vulnerable honeypots. This was implemented by creating
+                        Linux containers hosted on an ACES virtual machine and using a JavaScript Man-In-The-Middle client to connect attackers to
+                        the honeypot after a few password attempts. We then analyzed our results using Python and the Pandas library.
+                    </p>
+                    <p>
+                        Details:
+                        <ul>
+                            <li>Hypothesis: the actual or announced presence of an antivirus would decrease attacker interaction with the honeypot</li>
+                            <li>Hosted four different containers on virtual Linux machine as part of ACES lab</li>
+                            <li>Captured attacker IPs, commands entered, and preserved sessions for attackers to return within a 4 hour window</li>
+                            <li>Automated attack detection, attacker entry, honeypot recycling, and honeypot redeployment via Bash scripting</li>
+                            <li>Integrated Discord webhook to receive live notifications on attacks and honeypot status</li>
+                            <li>Analyzed data collected, finding a statistical significant difference in the commands attackers used between honeypots</li>
+                            <li>Surprisingly, our hypothesis was incorrect, as attackers executed more serious commands on the honeypots with a banner or antivirus</li>
+                        </ul>
+                        <a href="/public/hacs202_final_report.pdf">Full report</a> <br>
+                        <a href="/public/hacs202_final_presentation.pptx">Presentation</a>
+                    </p>
+                </div>
+                <p class="container-date">Jan 2024 - May 2024</p>
+            </div>
+
+            <hr>
+
+            <div class="container">
+                <img src="public/logos/steam.png" alt="Steam logo">
                 <div class="container-content">
                     <h3>Steam Game Machine Learning Prediction Model</h3>
                     <h4>ML Specialist</h3>
                     <p>
-                        This model is a linear regression prediction model created using Python and pandas. Using data from 27,000 Steam games, we
-                        cleaned the data, performed preliminary analysis, and are developing a model to predict a new game's expected number of players
-                        based on publisher, game genre, price, and more.
+                        This model is a linear regression prediction model created using Python and the Pandas library. Using data from 27,000 Steam games, we
+                        cleaned the data, performed statistical analysis, and applied a LightGBM classification model to predict a new game's expected number of sales
+                        using features such as publisher, game genre, price, and more.
+                    </p>
+
+                    <p>
+                        Details:
+                        <ul>
+                            <li>Cleaned dataset by parsing lists, applying one-hot encoding, and creating summary features for further analysis</li>
+                            <li>Performed ANOVA test on game publishers' positive rating proportions, finding the mean proportion differs significantly between them.</li>
+                            <li>Performed chi-squared test on price category vs. sales, finding that games with prices under $1 or above $10 have significantly higher sales counts</li>
+                            <li>Used Pearson Correlation on median playtime and positive rating proportion, finding a very weak correlation between them</li>
+                            <li>Implemented a LightGBM multiclass classification decision tree model to predict a Steam game's sales count category (Low, Low-Medium, Medium, Medium-High, High) with 91% accuracy</li>
+                            <li>Found that total ratings, positive rating proportion, and price have the largest impact on a game's number of sales</li>
+                            <li>Visualized trained decision tree and pathway for specific game</li>
+                        </ul>
+                        <a href="https://abarker0.github.io/CMSC320_Final_Project" target="_blank">Project Writeup</a>
                     </p>
                 </div>
-                <p class="container-date">Jan 2024 - Present</p>
+                <p class="container-date">Jan 2024 - May 2024</p>
             </div>
 
             <hr>
 
             <div class="container">
-                <img src="images/discord.png" alt="Discord logo">
+                <img src="public/logos/discord.png" alt="Discord logo">
                 <div class="container-content">
                     <h3>CherryBot</h3>
                     <h4>Project Lead</h3>
@@ -149,10 +206,11 @@
                     <p>
                         Features:
                         <ul>
-                            <li>Tracks user messages sent and displays leaderboard for each server.</li>
-                            <li>Manages virtual economy, with currency that can be collected daily, transferred between users, or used for games.</li>
-                            <li>Supports games such as blackjack, processing user input through message reactions, managing different game sessions simultaneously, and integrating with the virtual economy to win or lose currency.</li>
-                            <li>Plays music when invited to a voice channel by searching for and streaming audio from YouTube videos.</li>
+                            <li>Tracks user messages sent and displays leaderboard for each server</li>
+                            <li>Manages virtual economy, with currency that can be collected daily, transferred between users, or used for games</li>
+                            <li>Supports games such as blackjack, processing user input through message reactions, managing different game sessions simultaneously,
+                                and integrating with the virtual economy to win or lose currency</li>
+                            <li>Plays music when invited to a voice channel by searching for and streaming audio from YouTube videos</li>
                         </ul>
                         <a href="https://github.com/abarker0/CherryBot" target="_blank">Github source code</a>
                     </p>
@@ -160,27 +218,6 @@
                 <p class="container-date">Nov 2023 - Dec 2023</p>
             </div>
 
-            <hr>
-
-            <div class="container">
-                <img src="images/umd.png" alt="University of Maryland logo">
-                <div class="container-content">
-                    <h3>Mercury</h3>
-                    <h4>Project Lead</h3>
-                    <p>
-                        Mercury is a UMD Computer Science degree planner created using Python and the umd.io API. It was created for the OpenSourcery club's October Hackathon, which lasted one month.
-                    </p>
-                    <p>
-                        Features:
-                        <ul>
-                            <li>Organizes selected and required courses into semesters to minimize time to graduate</li>
-                            <li>Assists user with selecting general education courses that fill multiple requirements</li>
-                        </ul>
-                        <a href="https://github.com/abarker0/OpenSourcery2022" target="_blank">Github source code</a>
-                    </p>
-                </div>
-                <p class="container-date">Oct 2022 - Oct 2022</p>
-            </div>
         </section>
     </main>
     <footer class="section">
