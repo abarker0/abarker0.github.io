@@ -21,7 +21,7 @@ body {
 }
 
 .section {
-    padding: var(--padding);
+    padding: calc(2*var(--padding));
 }
 
 header {
@@ -33,7 +33,7 @@ header {
 }
 
 #inner-header > h1 {
-    font-size: 7vw;
+    font-size: 7rem;
     margin: auto;
     padding: 0;
 }
@@ -93,7 +93,7 @@ main {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    gap: var(--padding);
+    gap: calc(2*var(--padding));
 }
 
 .main-subsection {
@@ -106,7 +106,11 @@ main {
     margin-top: 0;
 }
 
-.skills-images-section {
+.main-subsection > h3 {
+    text-align: center;
+}
+
+.logos-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -114,11 +118,11 @@ main {
     margin: auto;
 }
 
-.skills-images-container {
+.logos-container {
     display: inline-block;
 }
 
-.skills-images-container > figcaption {
+.logos-container > figcaption {
     margin-top: 0.5rem;
     text-align: center;
 }

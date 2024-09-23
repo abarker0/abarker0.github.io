@@ -10,7 +10,7 @@
     <header class="section">
         <div id="inner-header">
             <h1>Alex Barker</h1>
-            <img id="profile" src="public/headshot.jpg" alt="Image of Alex Barker">
+            <img id="profile" src="public/headshot2.jpg" alt="Image of Alex Barker">
         </div>
     </header>
 
@@ -26,12 +26,35 @@
         <section id="experience-section" class="section main-subsection">
             <h2>Experience</h2>
             <div class="container">
+                <img src="public/logos/mantech.png" alt="Mantech logo">
+                <div class="container-content">
+                    <h3>Mantech</h3>
+                    <h4>Cyber Network Operations (CNO) Developer Intern</h3>
+                    <p>
+                        I am currently working as CNO Developer Intern at Mantech, and am researching a propietary method of automated vulnerability detection. 
+                    </p>
+                    <p>
+                        Responsibilities:
+                        <ul>
+                            <li>Automated abstraction of programs into control flow graphs to facilitate analysis</li>
+                            <li>Developed queries to identify unsigned to signed integer and mutex lock vulnerabilities by reverse engineering binaries using BinaryNinja</li>
+                            <li>Tested queries using Pytest on custom vulnerable binaries based on Juliet vulnerability dataset</li>
+                            <li>Designed high-level class diagram with graphviz and contributed to new user documentation in preparation for release</li>
+                        </ul>
+                    </p>
+                </div>
+                <p class="container-date">Aug 2022 - Present</p>
+            </div>
+            
+            <hr> 
+            
+            <div class="container">
                 <img src="public/logos/umd.png" alt="University of Maryland logo">
                 <div class="container-content">
                     <h3>University of Maryland, Division of IT</h3>
                     <h4>Service Desk Tier 2 Assistant Lead</h3>
                     <p>
-                        I am currently working as an Assistant Lead for UMD's DIT Service Desk. As such, I am responsible for a group of student technicians that answer phone calls, and I serve as a role model and mentor for them.
+                        I was an Assistant Lead for UMD's DIT Service Desk. There, I was responsible for a group of student technicians that answer phone calls, and I served as a role model and mentor for them.
                     </p>
                     <p>
                         Responsibilities:
@@ -49,7 +72,7 @@
             
             <hr> 
 
-            <div class="experience container">
+            <div class=" container">
                 <img src="public/logos/ricoh.png" alt="Ricoh USA, Inc., logo">
                 <div class="container-content">
                     <h3>Ricoh USA, Inc</h3>
@@ -104,35 +127,6 @@
             <h2>Projects</h2>
 
             <div class="container">
-                <img src="public/logos/umd.png" alt="University of Maryland logo">
-                <div class="container-content">
-                    <h3>Mercury</h3>
-                    <h4>Project Lead</h3>
-                    <p>
-                        Mercury is a UMD Computer Science degree planner website created using HTML/CSS and JavaScript hosted on a Node.js server using Express and ejs routing.
-                        Inspired by a previous Python hackathon project, this website integrates both the umd.io API and Planetterp API.
-                    </p>
-                    <p>
-                        Features:
-                        <ul>
-                            <li>Processes user registration, login, and session persistence using bcrypt salted encryption</li>
-                            <li>Requests current UMD courses using umd.io API based on user query filters</li>
-                            <!-- <li>Converts and applies prior learning credit to graduation requirements
-                            <li>Organizes selected and required courses into semesters to minimize time to graduate</li>
-                            <li>Assists user with selecting general education courses that fill multiple requirements</li> -->
-                        </ul>
-
-                        <a href="https://mercury-6phd.onrender.com/">Deployed website</a> <br>
-                        <a href="https://github.com/abarker0/Mercury" target="_blank">Github source code</a> <br>
-                        <a href="https://github.com/abarker0/OpenSourcery2022" target="_blank">Previous hackathon source code</a>
-                    </p>
-                </div>
-                <p class="container-date">May 2024 - Present</p>
-            </div>
-
-            <hr>
-
-            <div class="container">
                 <img src="public/logos/aces.png" alt="ACES logo">
                 <div class="container-content">
                     <h3>Antivirus Cybersecurity Research Project</h3>
@@ -154,8 +148,8 @@
                             <li>Analyzed data collected, finding a statistical significant difference in the commands attackers used between honeypots</li>
                             <li>Surprisingly, our hypothesis was incorrect, as attackers executed more serious commands on the honeypots with a banner or antivirus</li>
                         </ul>
-                        <a href="/public/hacs202_final_report.pdf">Full report</a> <br>
-                        <a href="/public/hacs202_final_presentation.pptx">Presentation</a>
+                        <a href="/public/hacs202_final_report.pdf" target="_blank">Full report</a> <br>
+                        <a href="/public/hacs202_final_presentation.pptx" target="_blank">Presentation</a>
                     </p>
                 </div>
                 <p class="container-date">Jan 2024 - May 2024</p>
@@ -189,6 +183,35 @@
                     </p>
                 </div>
                 <p class="container-date">Jan 2024 - May 2024</p>
+            </div>
+
+            <hr>
+
+            <div class="container">
+                <img src="public/logos/umd.png" alt="University of Maryland logo">
+                <div class="container-content">
+                    <h3>Mercury</h3>
+                    <h4>Project Lead</h3>
+                    <p>
+                        Mercury is a UMD Computer Science degree planner website created using HTML/CSS and JavaScript hosted on a Node.js server using Express and ejs routing.
+                        Inspired by a previous Python hackathon project, this website integrates both the umd.io API and Planetterp API.
+                    </p>
+                    <p>
+                        Features:
+                        <ul>
+                            <li>Processes user registration, login, and session persistence using bcrypt salted encryption</li>
+                            <li>Requests current UMD courses using umd.io API based on user query filters</li>
+                            <!-- <li>Converts and applies prior learning credit to graduation requirements
+                            <li>Organizes selected and required courses into semesters to minimize time to graduate</li>
+                            <li>Assists user with selecting general education courses that fill multiple requirements</li> -->
+                        </ul>
+
+                        <!-- <a href="https://mercury-6phd.onrender.com/" target="_blank">Deployed website</a> <br> -->
+                        <a href="https://github.com/abarker0/Mercury" target="_blank">Github source code</a> <br>
+                        <a href="https://github.com/abarker0/OpenSourcery2022" target="_blank">Previous hackathon source code</a>
+                    </p>
+                </div>
+                <p class="container-date">Apr 2024 - May 2024</p>
             </div>
 
             <hr>
