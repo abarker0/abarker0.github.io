@@ -28,23 +28,20 @@ header {
     background-color: var(--color-primary);
 }
 
-#inner-header > * {
-    display: inline-block;
-}
 
 #inner-header > h1 {
     font-size: 7rem;
     margin: auto;
-    padding: 0;
 }
 
 #inner-header {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    max-width: 70%;
-    /* width: fit-content; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     text-align: center;
+    flex-wrap: wrap;
+    column-gap: calc(2*var(--padding));
 }
 
 img {
@@ -54,38 +51,21 @@ img {
 #profile {
     width: calc(var(--skills-logo-size) * 3);
     border-radius: 50%;
-    margin: auto;
 }
 
 nav {
-    grid-template: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: calc(2*var(--padding));
     background-color: var(--color-secondary);
     font-size: 2rem;
-    height: fit-content;
-}
-
-#nav {
-    padding: calc(var(--padding)/2);
+    padding: calc(var(--padding));
 }
 
 a {
     color: black;
-}
-
-#nav-links > span {
-    width: 10rem;
-    text-align: center;
-}
-
-#nav-links > span + span{
-    margin-left: calc(var(--padding) * 2);
-}
-
-#nav-links {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    margin: auto;
 }
 
 main {
@@ -128,30 +108,35 @@ main {
 }
 
 .container {
-    display: grid;
-    grid-template-areas: 
-        "logo details date";       
-    grid-template-columns: 1fr 3fr 1fr;
-    column-gap: calc(var(--padding)/2);
+    display: flex;
+    gap: var(--padding);
+    margin: var(--padding) 0 var(--padding) 0;
 }
 
-.container > img {
-    grid-area: logo;
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: calc(var(--padding)/2);
+}
+
+.container-logo {
     width: calc(var(--skills-logo-size)*1.5);
     margin: auto;
 }
 
-.container-content {
-    grid-area: details;
-}
 
 .container-date {
-    grid-area: date;
     margin: auto;
     font-weight: bold;
     font-size: 1.25rem;
     min-width: 8rem;
     text-align: center;
+}
+
+.container-content {
+    padding: var(--padding);
 }
 
 #contact {
@@ -165,4 +150,29 @@ footer {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .main-subsection {
+        padding: var(--padding);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: calc(2*var(--padding)) 0 calc(2*var(--padding)) 0;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        gap: calc(var(--padding)/2);
+    }
+
+    .container-content {
+        padding: 0;
+    }
 }
