@@ -136,12 +136,6 @@ const education = [
         description: "I graduated from the University of Maryland with degree in Computer Science and Magna Cum Laude honors from my 3.99 GPA.\
         I explored the fields of software engineering, data science, and cybersecurity with a well-rounded curriculum, and am excited to apply my skills to the real world\
         I served the campus community as an Assistant Lead at the Division of IT Service Desk, as well as an arranger and the Vice President of the Gamer Symphony Orchestra, a student-run orchestra that exclusively plays video game music.",
-        links: [
-            {
-                label: "Github Source Code",
-                href: "https://github.com/abarker0/CherryBot",
-            },
-        ],
     },
 ];
 
@@ -186,14 +180,14 @@ const languages_icons = [
         logo_alt: "Bash programming language logo",
         name: "Bash",
     },
+    {
+        logo: "powershell.png",
+        logo_alt: "Powershell programming language logo",
+        name: "Powershell",
+    },
 ];
 
 const software_icons = [
-    {
-        logo: "binja.png",
-        logo_alt: "BinaryNinja logo",
-        name: "BinaryNinja",
-    },
     {
         logo: "git.png",
         logo_alt: "Git logo",
@@ -213,6 +207,26 @@ const software_icons = [
         logo: "linux.png",
         logo_alt: "Linux logo",
         name: "Linux",
+    },
+    {
+        logo: "kali.png",
+        logo_alt: "Kali Linux logo",
+        name: "Kali Linux",
+    },
+    {
+        logo: "vmware.png",
+        logo_alt: "VMWare logo",
+        name: "VMWare",
+    },
+    {
+        logo: "metasploit.png",
+        logo_alt: "Metasploit logo",
+        name: "Metasploit",
+    },
+    {
+        logo: "binja.png",
+        logo_alt: "BinaryNinja logo",
+        name: "BinaryNinja",
     },
 ];
 
@@ -246,6 +260,11 @@ const framework_icons = [
         logo: "junit.png",
         logo_alt: "Junit test logo",
         name: "Junit Test",
+    },
+    {
+        logo: "openssl.png",
+        logo_alt: "OpenSSL logo",
+        name: "OpenSSL",
     },
 ]
 
