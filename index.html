@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Barker</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="populate_content.js"></script>
 </head>
 <body>
-    <header class="section">
-        <div id="inner-header">
-            <h1>Alex Barker</h1>
-            <img id="profile" src="public/headshot.jpg" alt="Image of Alex Barker">
-        </div>
+    <header class="content-wrapper">
+        <h1 id="title-name">Alex Barker</h1>
+        <img id="profile" src="public/headshot.jpg" alt="Image of Alex Barker">
     </header>
 
     <nav id="nav">
@@ -20,126 +19,46 @@
         <span><a href="contact.html">Contact</a></span>
     </nav>
     
-    <main class="section">
-        <section id="logos-section" class="section main-subsection">
+    <main class="content-wrapper">
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Welcome to my website! I'm Alex Barker, a recent Computer Science passionate about cybersecurity and software engineering.
+                I love analyzing open-ended problems and coming up with creative and clever solutions to them.
+                As a developer with agile experience, I'm looking for an environment where I can tackle important problems that make a difference while pushing my skills and knowledge to the next level.<br><br>
+                
+                In my free time I play the cello, play video games, and run Dungeons and Dragons games for my friends.
+                I'm currently learning C++ and .NET to combine my C and object-oriented knowledge and create interactive apps.<br><br>
+
+                I always love to discuss my experiences in more depth online or in person, so feel free to contact me through my <a href="contact.html">contact</a> page!
+            </p>
+        </section>
+
+        <section id="logos-section" class="content-wrapper">
             <h2>Skills</h2>
 
             <h3>Languages</h3>
-            <div class="logos-section">
-                <figure class="logos-container">
-                    <img src="public/logos/python.png" alt="Python programming language logo">
-                    <figcaption>Python</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/java.png" alt="Java programming language logo">
-                    <figcaption>Java</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/c.png" alt="C programming language logo">
-                    <figcaption>C</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/html.png" alt="HTML logo">
-                    <figcaption>HTML</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/css.png" alt="CSS logo">
-                    <figcaption>CSS</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/js.png" alt="JS logo">
-                    <figcaption>JS</figcaption>
-                </figure> 
-                <figure class="logos-container">
-                    <img src="public/logos/sql.png" alt="SQL logo">
-                    <figcaption>SQL</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/bash.png" alt="Bash logo">
-                    <figcaption>Bash</figcaption>
-                </figure>        
+            <div id="language-logos" class="logos-section">
+                <!-- dynamically filled with JS  -->
             </div>
 
             <h3>Software</h3>
-            <div class="logos-section">
-                <figure class="logos-container">
-                    <img src="public/logos/binja.png" alt="BinaryNinja logo">
-                    <figcaption>BinaryNinja</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/git.jpg" alt="Git logo">
-                    <figcaption>Git</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/jira.png" alt="Jira logo">
-                    <figcaption>Jira</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/mongo.jpg" alt="MongoDB logo">
-                    <figcaption>MongoDB</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/linux.png" alt="Linux logo">
-                    <figcaption>Linux</figcaption>
-                </figure>              
+            <div id="software-logos" class="logos-section">
+                <!-- dynamically filled with JS  -->
             </div>
 
             <h3>Frameworks/Libraries</h3>
-            <div class="logos-section">
-                <figure class="logos-container">
-                    <img src="public/logos/pandas.png" alt="pandas logo">
-                    <figcaption>pandas</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/numpy.png" alt="NumPy logo">
-                    <figcaption>NumPy</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/node.png" alt="Node.js logo">
-                    <figcaption>Node.js</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/express.png" alt="Express/EJS logo">
-                    <figcaption>Express/EJS</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/pytest.png" alt="Pytest logo">
-                    <figcaption>Pytest</figcaption>
-                </figure>
-                <figure class="logos-container">
-                    <img src="public/logos/junit.png" alt="Junit test logo">
-                    <figcaption>Junit Test</figcaption>
-                </figure>           
+            <div id="framework-logos" class="logos-section">
+                <!-- dynamically filled with JS  -->
             </div>
         </section>
         
-        <section id="education-section" class="section main-subsection">
+        <section id="education-section" class="content-wrapper">
             <h2>Education</h2>
-            <div class="container">
-                <img src="public/logos/umd.png" alt="University of Maryland logo">
-                <div class="container-content">
-                    <h3>B.S. Computer Science, Minor in Advanced Cybersecurity Experience for Students (ACES)</h3>
-                    <h4>University of Maryland, College Park</h3>
-                    <p>
-                        I am currently attending the University of Maryland, and plan to graduate with a B.S. in Computer Science and a minor in Advanced Cybersecurity Experience for Students (ACES) in Spring 2025.
-                    </p>
-                    <p>GPA: 4.0 / 4.0</p>
-                    <p>Coursework:
-                        <ul>
-                            <li>Data Structures</li>
-                            <li>Algorithms</li>
-                            <li>Natural Language processing</li>
-                            <li>Data Science</li>
-                            <li>IoT Security</li>
-                            <li>Cryptography</li>
-                        </ul>
-                    </p>
-                </div>
-                <p class="container-date">Aug 2022 - May 2025</p>
-            </div>
+            <!-- dynamically filled with JS  -->
         </section>
     </main>
-    <footer class="section">
+    <footer class="content-wrapper">
         <p>Developed by Alex Barker</p>
     </footer>
 </body>
