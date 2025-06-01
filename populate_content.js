@@ -232,6 +232,11 @@ const software_icons = [
 
 const framework_icons = [
     {
+        logo: "hatch.png",
+        logo_alt: "Hatch logo",
+        name: "Hatch",
+    },
+    {
         logo: "pandas.png",
         logo_alt: "pandas logo",
         name: "pandas",
