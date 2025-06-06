@@ -46,7 +46,6 @@ img {
 
 #profile {
     width: calc(var(--skills-logo-size) * 3);
-    height: fit-content;
     border-radius: 50%;
 }
 

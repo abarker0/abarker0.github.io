@@ -134,7 +134,7 @@ const education = [
         subtitle: "University of Maryland, College Park",
         details: "Data Structures & Algorithms, Data Science, Web Development, Network Security, Penetration Testing",
         description: "I graduated from the University of Maryland with degree in Computer Science and Magna Cum Laude honors from my 3.99 GPA.\
-        I explored the fields of software engineering, data science, and cybersecurity with a well-rounded curriculum, and am excited to apply my skills to the real world\
+        I explored the fields of software engineering, data science, and cybersecurity with a well-rounded curriculum, and am excited to apply my skills working on meaningful projects.\
         I served the campus community as an Assistant Lead at the Division of IT Service Desk, as well as an arranger and the Vice President of the Gamer Symphony Orchestra, a student-run orchestra that exclusively plays video game music.",
     },
 ];
